@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Tablas</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+
+    <h4> Etiqueta table: </h4>
+    <table>
+        <caption>Tiempo necesario para viajar desde Philadelphia</caption>
+
+        <colgroup>
+            <col span="3" style="background-color:#c4f2ff;">
+            <col style="background-color:yellow;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Destino</th>
+                <th>En auto</th>
+                <th>En tren</th>
+                <th>En bicicleta</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Nueva York</th>
+                <td>1 h 51 min</td>
+                <td>1 h 22 min</td>
+                <td>8 h 53 min</td>
+            </tr>
+            <tr>
+                <th>Allentown</th>
+                <td>1 h 11 min</td>
+                <td>-</td>
+                <td>6 h 9 min</td>
+            </tr>
+            <tr>
+                <th>Reading</th>
+                <td>1 h 12 min</td>
+                <td>-</td>
+                <td>5 h 40 min</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Promedio</th>
+                <th>1 h 24 min</th>
+                <th>1 h 22 min</th>
+                <th>6 h 54 min</th>
+            </tr>
+        </tfoot>
+    </table>
+    <div class="comentarios">        
+        <ul>
+            <h3>Comentarios</h3>     
+            <li>Cuando las tablas son complejas o difíciles de comprender, los autores deberían proveer indicaciones con el fin de ayudar a los usuarios en la interpretación de los datos. 
+                Esta información puede ser presentada en el texto circundante, en el elemento caption o en el elemento figcaption, si la tabla es parte de un elemento figure 
+            </li>
+            <li>Atributos importantes de "td":
+                <ul>
+                    <li>
+                        a) colspan -> El número de celdas hacia la derecha que esta celda debería abarcar. Como resultado, esta celda tendrá un ancho igual a su ancho original más el ancho de las celdas que está abracando.
+                    </li>
+                    <li>
+                        b) rowspan -> El número de celdas hacia abajo que esta celda debería abarcar. Como resultado, esta celda tendrá una altura igual a su altura original más la altura de las celdas que está abracando.                    
+                    </li>
+                </ul>
+            </li>
+            <li>
+                El atributo scope de "th" indica que esa columna(s) o fila(s) son de encabezado
+            </li>
+        </ul>
+    </div>
+
+    <script src="/js/formato.js"></script>
+</body>
+
+</html>
